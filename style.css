@@ -58,6 +58,7 @@
   --round_border: 50%;
   --font_white_color_size: 16px;
   --half_border_radius: 0px 30px 30px 0px;
+  --border_bottom: #0000004c;
 }
 
 body {
@@ -855,64 +856,159 @@ body {
   height: 99px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.today_sales_icon {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid red; */
+}
+.today_sales_icon > i {
+  color: var(--primary);
+  font-size: 48px;
+}
 
+.today_sales_text {
+  width: 105px;
+  height: 52px;
+  /* border: 1px solid red; */
+}
 
-
+.today_sales_text > h6 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: var(--font_white_color_size);
+  text-align: end;
+  line-height: 30px;
+}
+.today_sales_text > p {
+  color: var(--white_color);
+  font-weight: 500;
+  text-align: center;
+}
 
 .card_2 {
   width: 223px;
   height: 99px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.total_sales_icon {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid red; */
+}
+.total_sales_icon > i {
+  color: var(--primary);
+  font-size: 48px;
+}
 
+.total_sales_text {
+  width: 105px;
+  height: 52px;
+  /* border: 1px solid red; */
+}
 
-
-
-
-
-
-
-
-
-
-
+.total_sales_text > h6 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: var(--font_white_color_size);
+  text-align: end;
+  line-height: 30px;
+}
+.total_sales_text > p {
+  color: var(--white_color);
+  font-weight: 500;
+  text-align: center;
+}
 
 .card_3 {
   width: 223px;
   height: 99px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.today_Revenue_icon {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid red; */
+}
+.today_Revenue_icon > i {
+  color: var(--primary);
+  font-size: 48px;
+}
 
+.today_Revenue_text {
+  width: 105px;
+  height: 52px;
+  /* border: 1px solid red; */
+}
 
-
-
-
-
-
+.today_Revenue_text > h6 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: var(--font_white_color_size);
+  text-align: end;
+  line-height: 30px;
+}
+.today_Revenue_text > p {
+  color: var(--white_color);
+  font-weight: 500;
+  text-align: center;
+  padding-right: 6px;
+}
 
 .card_4 {
   width: 223px;
   height: 99px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.total_Revenue_icon {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid red; */
+}
+.total_Revenue_icon > i {
+  color: var(--primary);
+  font-size: 48px;
+}
 
+.total_Revenue_text {
+  width: 105px;
+  height: 52px;
+  /* border: 1px solid red; */
+}
 
-
-
-
-
-
-
-
-
+.total_Revenue_text > h6 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: var(--font_white_color_size);
+  text-align: end;
+  line-height: 30px;
+}
+.total_Revenue_text > p {
+  color: var(--white_color);
+  font-weight: 500;
+  text-align: center;
+  padding-left: 5px;
+}
 
 .chart_main {
   width: 100%;
@@ -926,13 +1022,85 @@ body {
   height: 306px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.Worldwide_Sales_main {
+  width: 100%;
+  height: 48px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.Worldwide_Sales_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Worldwide_Sales_text > p {
+  color: var(--white_color);
+}
+.Worldwide_Sales_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Worldwide_Sales_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.Worldwide_Sales_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+.chart_right {
+  width: 100%;
+  height: 212px;
+  border: 1px solid orange;
+}
+
 .left_chart_main {
   width: 470px;
   height: 306px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.Salse_Revenue_main {
+  width: 100%;
+  height: 48px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.Salse_Revenue_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Salse_Revenue_text > p {
+  color: var(--white_color);
+}
+.Salse_Revenue_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Salse_Revenue_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.Salse_Revenue_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+.chart_left {
+  width: 100%;
+  height: 212px;
+  border: 1px solid orange;
+}
+
 .table_main {
   width: 100%;
   height: 394px;
@@ -945,7 +1113,44 @@ body {
   height: 372px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.Recent_Salse_main {
+  width: 100%;
+  height: 48px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.Recent_Salse_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Recent_Salse_text > p {
+  color: var(--white_color);
+}
+.Recent_Salse_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.Recent_Salse_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.Recent_Salse_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+
+.table_data_main {
+  width: 100%;
+  height: 278px;
+  border: 1px solid pink;
+}
+
 .sub_container {
   width: 100%;
   height: 398px;
@@ -959,19 +1164,299 @@ body {
   height: 374px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.messages_main {
+  width: 100%;
+  height: 30px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.messages_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.messages_text > p {
+  color: var(--white_color);
+}
+.messages_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.messages_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.messages_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+
+.massages_profile_main {
+  width: 100%;
+  height: 78px;
+  border-bottom: 1.5px solid var(--border_bottom);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.massages_profile_img {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid red; */
+}
+.massages_profile_img > img {
+  border-radius: var(--round_border);
+  width: 100%;
+  height: 100%;
+}
+
+.massages_profile_text_main {
+  width: 202px;
+  height: 40px;
+  /* border: 1px solid white; */
+}
+
+.massages_profile_user_name_and_last_active_time {
+  width: 100%;
+  height: 21px;
+  /* border: 1px solid white; */
+
+  display: flex;
+  justify-content: space-between;
+}
+.massages_profile_user_name {
+  width: 40%;
+  height: 21px;
+  /* border: 1px solid white; */
+  color: var(--white_color);
+}
+.massages_profile_last_active {
+  width: 55%;
+  height: 21px;
+  /* border: 1px solid white; */
+  color: var(--light);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.shot_massage_main {
+  width: 100%;
+  height: 21px;
+  /* border: 1px solid white; */
+  color: var(--light);
+  font-weight: 400;
+  font-size: 16.5px;
+}
+
+.massages_profile_main4 {
+  width: 100%;
+  height: 78px;
+  /* border-bottom: 1.5px solid var(--border_bottom); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .calender_container {
   width: 305px;
   height: 374px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.calender_main {
+  width: 100%;
+  height: 48px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.calender_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.calender_text > p {
+  color: var(--white_color);
+}
+.calender_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.calender_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.calender_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+
+.calender_date {
+  width: 100%;
+  height: 225px;
+  border: 1px solid rgb(0, 255, 64);
+}
+
 .to-do-list_container {
   width: 305px;
   height: 374px;
   background: var(--secondary);
   border-radius: var(--border_radius);
+  padding: 24px;
 }
+
+.to-do-list_main {
+  width: 100%;
+  height: 48px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.to-do-list_text {
+  width: 122px;
+  height: 20px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.to-do-list_text > p {
+  color: var(--white_color);
+}
+.to-do-list_show_all {
+  width: 65px;
+  height: 24px;
+  /* border: 1px solid rgb(0, 255, 64); */
+}
+.to-do-list_show_all > p {
+  color: var(--primary);
+  font-weight: 400;
+}
+.to-do-list_show_all > p:hover {
+  color: var(--hover_with_primary);
+}
+
+.enter_task_and_add_button_main{
+  width: 100%;
+  height: 46px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+.enter_task_input{
+  width:195px ;
+  height: 38px;
+  background: var(--dark);
+border-radius: var(--border_radius);
+padding: 6px 12px;
+}
+
+.enter_task_input >input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--font_color);
+  font-size: var(--font_white_color_size);
+}
+.enter_task_input >input::placeholder{
+  color: var(--light);
+}
+
+
+
+
+.enter_task_add_button{
+  width: 55px;
+  height: 38px;
+  background: var(--primary);
+  border-radius: var(--border_radius);
+  padding: 9px 12px;
+  color: var(--white_color);
+}
+.enter_task_add_button:hover{
+  background: var(--hover_with_primary);
+}
+
+
+.checkbox_and_text_cross_icon_main{
+  width: 100%;
+  height: 47px;
+  border-bottom:2px solid var(--border_bottom);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.checkbox_main{
+  width: 14.28px;
+  height: 16px;
+  
+
+}
+.checkbox_main >input{
+  width: 100%;
+  height: 100%;
+}
+
+.text_and_cross_icon{
+  width:227px ;
+  height: 30px;
+  /* border: 1px solid rgb(200, 137, 137); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text{
+  width:166px ;
+  height: 24px;
+  /* border: 1px solid white; */
+  color: var(--light);
+  font-weight: 400;
+}
+
+
+.cross_icon{
+  width: 27px;
+  height: 30px;
+  /* border: 1px solid white; */
+}
+.cross_icon >i{
+  color: var(--primary);
+  font-size: 16px;
+  padding: 6px;
+}
+
+.cross_icon >i:hover{
+  color: var(--hover_with_primary);
+}
+
+.checkbox_and_text_cross_icon_main5{
+  width: 100%;
+  height: 47px;
+  /* border-bottom:2px solid var(--border_bottom); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
 .copiyright_main {
   width: 100%;
   height: 120px;
@@ -985,4 +1470,56 @@ body {
   background: var(--secondary);
   border-radius: var(--border_radius);
   /* border: 1px solid rgb(212, 152, 22); */
+  padding: 26px;
+}
+
+.copiy_container_left_part_main {
+  width: 100%;
+  height: 48px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+.copiy_container_left_part {
+  width: 49%;
+  height: 48px;
+  /* border: 1px solid white; */
+  cursor: pointer;
+}
+.copiy_container_left_part > p {
+  color: var(--light);
+}
+.copiy_container_left_part > p > span {
+  color: var(--primary);
+}
+.copiy_container_left_part > p > span:hover {
+  color: var(--hover_with_primary);
+}
+.copiy_container_right_part {
+  width: 49%;
+  height: 48px;
+  /* border: 1px solid white; */
+  cursor: pointer;
+}
+.frist {
+  color: var(--light);
+  margin-bottom: 5px;
+  text-align: right;
+}
+.frist > span {
+  color: var(--primary);
+}
+.frist > span:hover {
+  color: var(--hover_with_primary);
+}
+
+.second {
+  color: var(--light);
+  text-align: right;
+}
+.second > span {
+  color: var(--primary);
+}
+.second > span:hover {
+  color: var(--hover_with_primary);
 }
