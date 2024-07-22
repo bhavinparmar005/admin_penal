@@ -1028,7 +1028,7 @@ body {
 .Worldwide_Sales_main {
   width: 100%;
   height: 48px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1056,7 +1056,7 @@ body {
 .chart_right {
   width: 100%;
   height: 212px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .left_chart_main {
@@ -1070,7 +1070,7 @@ body {
 .Salse_Revenue_main {
   width: 100%;
   height: 48px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1098,7 +1098,7 @@ body {
 .chart_left {
   width: 100%;
   height: 212px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .table_main {
@@ -1119,7 +1119,7 @@ body {
 .Recent_Salse_main {
   width: 100%;
   height: 48px;
-  border: 1px solid red;
+  /* border: px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1148,8 +1148,56 @@ body {
 .table_data_main {
   width: 100%;
   height: 278px;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
+
+/* table  */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 278px;
+  cursor: pointer;
+}
+th {
+  color: white;
+  border: 1px solid var(--dark);
+  text-align: left;
+  padding: 8px;
+  font-weight: 500;
+  font-size: var(--font_white_color_size);
+}
+td {
+  border: 1px solid var(--dark);
+  text-align: left;
+  padding: 8px;
+  color: var(--light);
+  font-weight: 400;
+}
+tr:hover {
+  background-color: #1818184d;
+}
+.input_check_box_for_table {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+button {
+  background: var(--primary);
+  border: none;
+  height: 30px;
+  width: 55px;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+button:hover {
+  background: var(--hover_with_primary);
+}
+
+/* table  end */
 
 .sub_container {
   width: 100%;
@@ -1273,7 +1321,7 @@ body {
 .calender_main {
   width: 100%;
   height: 48px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1301,8 +1349,8 @@ body {
 
 .calender_date {
   width: 100%;
-  height: 225px;
-  border: 1px solid rgb(0, 255, 64);
+  height: 270px;
+  /* border: 1px solid rgb(0, 255, 64); */
 }
 
 .to-do-list_container {
@@ -1342,22 +1390,22 @@ body {
   color: var(--hover_with_primary);
 }
 
-.enter_task_and_add_button_main{
+.enter_task_and_add_button_main {
   width: 100%;
   height: 46px;
   /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
 }
-.enter_task_input{
-  width:195px ;
+.enter_task_input {
+  width: 195px;
   height: 38px;
   background: var(--dark);
-border-radius: var(--border_radius);
-padding: 6px 12px;
+  border-radius: var(--border_radius);
+  padding: 6px 12px;
 }
 
-.enter_task_input >input{
+.enter_task_input > input {
   width: 100%;
   height: 100%;
   border: none;
@@ -1366,14 +1414,11 @@ padding: 6px 12px;
   color: var(--font_color);
   font-size: var(--font_white_color_size);
 }
-.enter_task_input >input::placeholder{
+.enter_task_input > input::placeholder {
   color: var(--light);
 }
 
-
-
-
-.enter_task_add_button{
+.enter_task_add_button {
   width: 55px;
   height: 38px;
   background: var(--primary);
@@ -1381,34 +1426,31 @@ padding: 6px 12px;
   padding: 9px 12px;
   color: var(--white_color);
 }
-.enter_task_add_button:hover{
+.enter_task_add_button:hover {
   background: var(--hover_with_primary);
 }
 
-
-.checkbox_and_text_cross_icon_main{
+.checkbox_and_text_cross_icon_main {
   width: 100%;
   height: 47px;
-  border-bottom:2px solid var(--border_bottom);
+  border-bottom: 2px solid var(--border_bottom);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.checkbox_main{
+.checkbox_main {
   width: 14.28px;
   height: 16px;
-  
-
+  margin-bottom: 3px;
 }
-.checkbox_main >input{
+.checkbox_main > input {
   width: 100%;
   height: 100%;
 }
 
-.text_and_cross_icon{
-  width:227px ;
+.text_and_cross_icon {
+  width: 227px;
   height: 30px;
   /* border: 1px solid rgb(200, 137, 137); */
   display: flex;
@@ -1416,46 +1458,37 @@ padding: 6px 12px;
   align-items: center;
 }
 
-.text{
-  width:166px ;
+.text {
+  width: 166px;
   height: 24px;
   /* border: 1px solid white; */
   color: var(--light);
   font-weight: 400;
 }
 
-
-.cross_icon{
+.cross_icon {
   width: 27px;
   height: 30px;
   /* border: 1px solid white; */
 }
-.cross_icon >i{
+.cross_icon > i {
   color: var(--primary);
   font-size: 16px;
   padding: 6px;
 }
 
-.cross_icon >i:hover{
+.cross_icon > i:hover {
   color: var(--hover_with_primary);
 }
 
-.checkbox_and_text_cross_icon_main5{
+.checkbox_and_text_cross_icon_main5 {
   width: 100%;
   height: 47px;
   /* border-bottom:2px solid var(--border_bottom); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
-
-
-
-
-
-
 
 .copiyright_main {
   width: 100%;

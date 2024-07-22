@@ -1,581 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin_penal</title>
-        <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin_penal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- charts links -->
 
-        <!-- font awesome link  -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-        <!-- google font  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet" />
+    <!-- calander links -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/theme1.css" />
 
-        <!-- CDN for jQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="loading-overlay">
-            <div class="loading-spinner"></div>
-            <div class="loading-text">Please wait, loading...</div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN for jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Please wait, loading...</div>
+    </div>
+
+    <div class="mian_container">
+      <div class="right_main">
+        <div class="right_main_logo_with_icon">
+          <div class="right_bar_logo">
+            <i class="fa fa-user-edit me-2"></i>
+          </div>
+          <div class="right_bar_logo_text">Darkword</div>
         </div>
 
-        <div class="mian_container">
-            <div class="right_main">
-                <div class="right_main_logo_with_icon">
-                    <div class="right_bar_logo">
-                        <i class="fa fa-user-edit me-2"></i>
-                    </div>
-                    <div class="right_bar_logo_text">Darkword</div>
-                </div>
-
-                <div class="user_icon_main">
-                    <div class="user_profile">
-                        <img
-                            src="./img/Screenshot 2024-07-19 021025.jpg"
-                            alt="user_icon_main"
-                            width="100%"
-                            height="100%" />
-                    </div>
-                    <div class="user_profile_name">
-                        <h6>Bhavin</h6>
-                        <p>Admin</p>
-                    </div>
-                </div>
-
-                <!-- dashbord -->
-                <div class="dashbord_icon_and_text_mian">
-                    <div class="dashbord_icon_and_text_sub">
-                        <div class="dashbord_icon">
-                            <i class="fa fa-tachometer-alt"></i>
-                        </div>
-
-                        <div class="dashbord_text">Dashboard</div>
-                    </div>
-                </div>
-
-                <!-- element -->
-                <div class="element_icon_and_tex_main">
-                    <div class="element_icon_and_text_sub">
-                        <div class="element_icon">
-                            <i class="fa fa-laptop me-2"></i>
-                        </div>
-
-                        <div class="element_text_and_dropdown_main">
-                            <div class="element_text">Elements</div>
-
-                            <div class="element_drop_down">
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- widgets -->
-                <div class="widgets_icon_and_tex_main">
-                    <div class="widgets_icon_and_text_sub">
-                        <div class="widgets_icon">
-                            <i class="fa fa-th"></i>
-                        </div>
-
-                        <div class="widgets_text_and_dropdown_main">
-                            <div class="widgets_text">Widgets</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- forms -->
-                <div class="forms_icon_and_tex_main">
-                    <div class="forms_icon_and_text_sub">
-                        <div class="forms_icon">
-                            <i class="fa fa-keyboard me-2"></i>
-                        </div>
-
-                        <div class="forms_text_and_dropdown_main">
-                            <div class="forms_text">Forms</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- tables -->
-                <div class="tables_icon_and_tex_main">
-                    <div class="tables_icon_and_text_sub">
-                        <div class="tables_icon">
-                            <i class="fa fa-table me-2"></i>
-                        </div>
-
-                        <div class="tables_text_and_dropdown_main">
-                            <div class="tables_text">Tables</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- charts -->
-                <div class="charts_icon_and_tex_main">
-                    <div class="charts_icon_and_text_sub">
-                        <div class="charts_icon">
-                            <i class="fa fa-chart-bar me-2"></i>
-                        </div>
-
-                        <div class="charts_text_and_dropdown_main">
-                            <div class="charts_text">Charts</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- pages -->
-                <div class="pages_icon_and_tex_main">
-                    <div class="pages_icon_and_text_sub">
-                        <div class="pages_icon">
-                            <i class="far fa-file-alt me-2"></i>
-                        </div>
-
-                        <div class="pages_text_and_dropdown_main">
-                            <div class="pages_text">Pages</div>
-
-                            <div class="pages_drop_down">
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="left_main">
-                <div class="left_navbar">
-                    <div class="left_navbar_left_section">
-                        <div class="hame_burger_icon_and_search_bar_main">
-                            <div class="hame_burger_icon">
-                                <i class="fa fa-bars"></i>
-                            </div>
-                            <div class="search_bar_main">
-                                <input type="text" class="search_bar"
-                                    placeholder="Search" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="left_navbar_right_section">
-                        <div class="nav_bar_item_main">
-                            <div class="nav_bar_item_massage_main">
-                                <div class="nav_bar_item_massage_icon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <div
-                                    class="nav_bar_item_massage_text">Messages</div>
-                                <div
-                                    class="nav_bar_item_massage_drop_down_menu">
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                            </div>
-
-                            <div class="nav_bar_item_notificatin_main">
-                                <div class="nav_bar_item_notificatin_icon">
-                                    <i class="fa fa-bell"></i>
-                                </div>
-                                <div
-                                    class="nav_bar_item_notificatin_text">Notification</div>
-                                <div
-                                    class="nav_bar_item_notificatin_drop_down_menu">
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                            </div>
-
-                            <div class="nav_bar_item_user_main">
-                                <div class="nav_bar_item_user_icon">
-                                    <img
-                                        src="./img/Screenshot 2024-07-19 021025.jpg"
-                                        alt="user_profile" />
-                                </div>
-                                <div class="nav_bar_item_user_text"
-                                    style="text-align: center">
-                                    P. bhavin
-                                </div>
-                                <div class="nav_bar_item_user_drop_down_menu">
-                                    <i class="fa fa-chevron-down"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card_main">
-                    <div class="card_1">
-                        <div class="today_sales_icon">
-                            <i class="fa fa-chart-line"></i>
-                        </div>
-                        <div class="today_sales_text">
-                            <h6>Today Sale</h6>
-                            <p>$1234</p>
-                        </div>
-                    </div>
-                    <div class="card_2">
-                        <div class="total_sales_icon">
-                            <i class="fa fa-chart-bar"></i>
-                        </div>
-
-                        <div class="total_sales_text">
-                            <h6>Totals Sale</h6>
-                            <p>$1234</p>
-                        </div>
-                    </div>
-                    <div class="card_3">
-                        <div class="today_Revenue_icon">
-                            <i class="fa fa-chart-area fa-3x text-primary"></i>
-                        </div>
-                        <div class="today_Revenue_text">
-                            <h6>Today Reve</h6>
-                            <p>$1234</p>
-                        </div>
-                    </div>
-                    <div class="card_4">
-                        <div class="total_Revenue_icon">
-                            <i class="fa fa-chart-pie fa-3x text-primary"></i>
-                        </div>
-                        <div class="total_Revenue_text">
-                            <h6>Total Reve</h6>
-                            <p>$1234</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart_main">
-                    <div class="right_chart_main">
-                        <div class="Worldwide_Sales_main">
-                            <div class="Worldwide_Sales_text">
-                                <p>Worldwide Sales</p>
-                            </div>
-                            <div class="Worldwide_Sales_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-                        <div class="chart_right"></div>
-                    </div>
-                    <div class="left_chart_main">
-                        <div class="Salse_Revenue_main">
-                            <div class="Salse_Revenue_text">
-                                <p>Salse & Revenue</p>
-                            </div>
-                            <div class="Salse_Revenue_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-
-                        <div class="chart_left"></div>
-                    </div>
-                </div>
-
-                <div class="table_main">
-                    <div class="tebal">
-                        <div class="Recent_Salse_main">
-                            <div class="Recent_Salse_text">
-                                <p>Recent Salse</p>
-                            </div>
-                            <div class="Recent_Salse_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-
-                        <div class="table_data_main"></div>
-                    </div>
-                </div>
-
-                <div class="sub_container">
-                    <div class="messages_container">
-                        <div class="messages_main">
-                            <div class="messages_text">
-                                <p>Messages</p>
-                            </div>
-                            <div class="messages_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-
-                        <!-- 1 member -->
-
-                        <div class="massages_profile_main">
-                            <div class="massages_profile_img">
-                                <img
-                                    src="./img/Screenshot 2024-07-19 021025.jpg"
-                                    alt="user" />
-                            </div>
-
-                            <div class="massages_profile_text_main">
-                                <div
-                                    class="massages_profile_user_name_and_last_active_time">
-                                    <div
-                                        class="massages_profile_user_name">Bhavin</div>
-
-                                    <div class="massages_profile_last_active">15
-                                        minutes ago</div>
-                                </div>
-
-                                <div class="shot_massage_main">Short message
-                                    goes here...</div>
-                            </div>
-                        </div>
-
-                        <!-- 2 member -->
-
-                        <div class="massages_profile_main">
-                            <div class="massages_profile_img">
-                                <img
-                                    src="./img/Screenshot 2024-07-19 021025.jpg"
-                                    alt="user" />
-                            </div>
-
-                            <div class="massages_profile_text_main">
-                                <div
-                                    class="massages_profile_user_name_and_last_active_time">
-                                    <div
-                                        class="massages_profile_user_name">Bhavin</div>
-
-                                    <div class="massages_profile_last_active">15
-                                        minutes ago</div>
-                                </div>
-
-                                <div class="shot_massage_main">Short message
-                                    goes here...</div>
-                            </div>
-                        </div>
-
-                        <!-- 3 member -->
-
-                        <div class="massages_profile_main">
-                            <div class="massages_profile_img">
-                                <img
-                                    src="./img/Screenshot 2024-07-19 021025.jpg"
-                                    alt="user" />
-                            </div>
-
-                            <div class="massages_profile_text_main">
-                                <div
-                                    class="massages_profile_user_name_and_last_active_time">
-                                    <div
-                                        class="massages_profile_user_name">Bhavin</div>
-
-                                    <div class="massages_profile_last_active">15
-                                        minutes ago</div>
-                                </div>
-
-                                <div class="shot_massage_main">Short message
-                                    goes here...</div>
-                            </div>
-                        </div>
-
-                        <!-- 4 member -->
-
-                        <div class="massages_profile_main4">
-                            <div class="massages_profile_img">
-                                <img
-                                    src="./img/Screenshot 2024-07-19 021025.jpg"
-                                    alt="user" />
-                            </div>
-
-                            <div class="massages_profile_text_main">
-                                <div
-                                    class="massages_profile_user_name_and_last_active_time">
-                                    <div
-                                        class="massages_profile_user_name">Bhavin</div>
-
-                                    <div class="massages_profile_last_active">15
-                                        minutes ago</div>
-                                </div>
-
-                                <div class="shot_massage_main">Short message
-                                    goes here...</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calender_container">
-                        <div class="calender_main">
-                            <div class="calender_text">
-                                <p>Calender</p>
-                            </div>
-                            <div class="calender_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-
-                        <div class="calender_date"></div>
-                    </div>
-
-
-
-
-
-                    <div class="to-do-list_container">
-                        <div class="to-do-list_main">
-                            <div class="to-do-list_text">
-                                <p>To Do List</p>
-                            </div>
-                            <div class="to-do-list_show_all">
-                                <p>Show All</p>
-                            </div>
-                        </div>
-
-                        <div class="enter_task_and_add_button_main">
-                            <div class="enter_task_input">
-                                <input type="text" placeholder="Enter Task">
-                            </div>
-                            <div class="enter_task_add_button">Add</div>
-                            
-                        </div>
-
-                        <!-- 1 check box -->
-                        <div class="checkbox_and_text_cross_icon_main">
-
-                            <div class="checkbox_main">
-                                <input type="checkbox">
-                            </div>
-                            <div class="text_and_cross_icon">
-                                <div class="text"> Short task goes here... </div>
-                                <div class="cross_icon">
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                        
-                          <!-- 2 check box -->
-                          <div class="checkbox_and_text_cross_icon_main">
-
-                            <div class="checkbox_main">
-                                <input type="checkbox">
-                            </div>
-                            <div class="text_and_cross_icon">
-                                <div class="text"> Short task goes here... </div>
-                                <div class="cross_icon">
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                        
-                            <!-- 3 check box -->
-                            <div class="checkbox_and_text_cross_icon_main">
-
-                                <div class="checkbox_main">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="text_and_cross_icon">
-                                    <div class="text"> Short task goes here... </div>
-                                    <div class="cross_icon">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-    
-    
-    
-    
-                            </div>
-                            
-                              <!-- 4 check box -->
-                              <div class="checkbox_and_text_cross_icon_main">
-
-                                <div class="checkbox_main">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="text_and_cross_icon">
-                                    <div class="text"> Short task goes here... </div>
-                                    <div class="cross_icon">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </div>
-    
-    
-    
-    
-                            </div>
-                            
-                                <!-- 5 check box -->
-
-                                <div class="checkbox_and_text_cross_icon_main5">
-
-                                    <div class="checkbox_main">
-                                        <input type="checkbox">
-                                    </div>
-                                    <div class="text_and_cross_icon">
-                                        <div class="text"> Short task goes here... </div>
-                                        <div class="cross_icon">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-        
-        
-        
-        
-                                </div>
-                                
-
-
-                        
-
-
-
-
-
-
-
-
-
-
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                <div class="copiyright_main">
-                    <div class="copiy_right_sub_container">
-                        <div class="copiy_container_left_part_main">
-                            <div class="copiy_container_left_part">
-                                <p>© <span>Your Site Name</span>, All Right
-                                    Reserved.</p>
-                            </div>
-                            <div class="copiy_container_right_part">
-                                <p class="frist">Designed By:- <span> Bhavin
-                                        Parmar</span></p>
-                                <p class="second">
-                                    Distributed By:- <span> Bhavin Parmar
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="user_icon_main">
+          <div class="user_profile">
+            <img
+              src="./img/Screenshot 2024-07-19 021025.jpg"
+              alt="user_icon_main"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="user_profile_name">
+            <h6>Bhavin</h6>
+            <p>Admin</p>
+          </div>
         </div>
 
-        <script>
+        <!-- dashbord -->
+        <div class="dashbord_icon_and_text_mian">
+          <div class="dashbord_icon_and_text_sub">
+            <div class="dashbord_icon">
+              <i class="fa fa-tachometer-alt"></i>
+            </div>
+
+            <div class="dashbord_text">Dashboard</div>
+          </div>
+        </div>
+
+        <!-- element -->
+        <div class="element_icon_and_tex_main">
+          <div class="element_icon_and_text_sub">
+            <div class="element_icon">
+              <i class="fa fa-laptop me-2"></i>
+            </div>
+
+            <div class="element_text_and_dropdown_main">
+              <div class="element_text">Elements</div>
+
+              <div class="element_drop_down">
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- widgets -->
+        <div class="widgets_icon_and_tex_main">
+          <div class="widgets_icon_and_text_sub">
+            <div class="widgets_icon">
+              <i class="fa fa-th"></i>
+            </div>
+
+            <div class="widgets_text_and_dropdown_main">
+              <div class="widgets_text">Widgets</div>
+            </div>
+          </div>
+        </div>
+        <!-- forms -->
+        <div class="forms_icon_and_tex_main">
+          <div class="forms_icon_and_text_sub">
+            <div class="forms_icon">
+              <i class="fa fa-keyboard me-2"></i>
+            </div>
+
+            <div class="forms_text_and_dropdown_main">
+              <div class="forms_text">Forms</div>
+            </div>
+          </div>
+        </div>
+        <!-- tables -->
+        <div class="tables_icon_and_tex_main">
+          <div class="tables_icon_and_text_sub">
+            <div class="tables_icon">
+              <i class="fa fa-table me-2"></i>
+            </div>
+
+            <div class="tables_text_and_dropdown_main">
+              <div class="tables_text">Tables</div>
+            </div>
+          </div>
+        </div>
+        <!-- charts -->
+        <div class="charts_icon_and_tex_main">
+          <div class="charts_icon_and_text_sub">
+            <div class="charts_icon">
+              <i class="fa fa-chart-bar me-2"></i>
+            </div>
+
+            <div class="charts_text_and_dropdown_main">
+              <div class="charts_text">Charts</div>
+            </div>
+          </div>
+        </div>
+        <!-- pages -->
+        <div class="pages_icon_and_tex_main">
+          <div class="pages_icon_and_text_sub">
+            <div class="pages_icon">
+              <i class="far fa-file-alt me-2"></i>
+            </div>
+
+            <div class="pages_text_and_dropdown_main">
+              <div class="pages_text">Pages</div>
+
+              <div class="pages_drop_down">
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="left_main">
+        <div class="left_navbar">
+          <div class="left_navbar_left_section">
+            <div class="hame_burger_icon_and_search_bar_main">
+              <div class="hame_burger_icon">
+                <i class="fa fa-bars"></i>
+              </div>
+              <div class="search_bar_main">
+                <input type="text" class="search_bar" placeholder="Search" />
+              </div>
+            </div>
+          </div>
+          <div class="left_navbar_right_section">
+            <div class="nav_bar_item_main">
+              <div class="nav_bar_item_massage_main">
+                <div class="nav_bar_item_massage_icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="nav_bar_item_massage_text">Messages</div>
+                <div class="nav_bar_item_massage_drop_down_menu">
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="nav_bar_item_notificatin_main">
+                <div class="nav_bar_item_notificatin_icon">
+                  <i class="fa fa-bell"></i>
+                </div>
+                <div class="nav_bar_item_notificatin_text">Notification</div>
+                <div class="nav_bar_item_notificatin_drop_down_menu">
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="nav_bar_item_user_main">
+                <div class="nav_bar_item_user_icon">
+                  <img
+                    src="./img/Screenshot 2024-07-19 021025.jpg"
+                    alt="user_profile"
+                  />
+                </div>
+                <div class="nav_bar_item_user_text" style="text-align: center">
+                  P. bhavin
+                </div>
+                <div class="nav_bar_item_user_drop_down_menu">
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_main">
+          <div class="card_1">
+            <div class="today_sales_icon">
+              <i class="fa fa-chart-line"></i>
+            </div>
+            <div class="today_sales_text">
+              <h6>Today Sale</h6>
+              <p>$1234</p>
+            </div>
+          </div>
+          <div class="card_2">
+            <div class="total_sales_icon">
+              <i class="fa fa-chart-bar"></i>
+            </div>
+
+            <div class="total_sales_text">
+              <h6>Totals Sale</h6>
+              <p>$1234</p>
+            </div>
+          </div>
+          <div class="card_3">
+            <div class="today_Revenue_icon">
+              <i class="fa fa-chart-area fa-3x text-primary"></i>
+            </div>
+            <div class="today_Revenue_text">
+              <h6>Today Reve</h6>
+              <p>$1234</p>
+            </div>
+          </div>
+          <div class="card_4">
+            <div class="total_Revenue_icon">
+              <i class="fa fa-chart-pie fa-3x text-primary"></i>
+            </div>
+            <div class="total_Revenue_text">
+              <h6>Total Reve</h6>
+              <p>$1234</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart_main">
+          <div class="right_chart_main">
+            <div class="Worldwide_Sales_main">
+              <div class="Worldwide_Sales_text">
+                <p>Worldwide Sales</p>
+              </div>
+              <div class="Worldwide_Sales_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+            <div class="chart_right"></div>
+          </div>
+          <div class="left_chart_main">
+            <div class="Salse_Revenue_main">
+              <div class="Salse_Revenue_text">
+                <p>Salse & Revenue</p>
+              </div>
+              <div class="Salse_Revenue_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+
+            <div class="chart_left"></div>
+          </div>
+        </div>
+
+        <div class="table_main">
+          <div class="tebal">
+            <div class="Recent_Salse_main">
+              <div class="Recent_Salse_text">
+                <p>Recent Salse</p>
+              </div>
+              <div class="Recent_Salse_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+
+            <div class="table_data_main">
+              <table>
+                <tr>
+                  <th>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </th>
+                  <th>Date</th>
+                  <th>Invoice</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </td>
+                  <td>01 Jan 2024</td>
+                  <td>INV-0123</td>
+                  <td>Bhavin Parmar</td>
+                  <td>₹123</td>
+                  <td>Paid</td>
+                  <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </td>
+                  <td>01 Jan 2024</td>
+                  <td>INV-0123</td>
+                  <td>Bhavin Parmar</td>
+                  <td>₹123</td>
+                  <td>Paid</td>
+                  <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </td>
+                  <td>01 Jan 2024</td>
+                  <td>INV-0123</td>
+                  <td>Bhavin Parmar</td>
+                  <td>₹123</td>
+                  <td>Paid</td>
+                  <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </td>
+                  <td>01 Jan 2024</td>
+                  <td>INV-0123</td>
+                  <td>Bhavin Parmar</td>
+                  <td>₹123</td>
+                  <td>Paid</td>
+                  <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" class="input_check_box_for_table" />
+                  </td>
+                  <td>01 Jan 2024</td>
+                  <td>INV-0123</td>
+                  <td>Bhavin Parmar</td>
+                  <td>₹123</td>
+                  <td>Paid</td>
+                  <td><button>Detail</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub_container">
+          <div class="messages_container">
+            <div class="messages_main">
+              <div class="messages_text">
+                <p>Messages</p>
+              </div>
+              <div class="messages_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+
+            <!-- 1 member -->
+
+            <div class="massages_profile_main">
+              <div class="massages_profile_img">
+                <img src="./img/Screenshot 2024-07-19 021025.jpg" alt="user" />
+              </div>
+
+              <div class="massages_profile_text_main">
+                <div class="massages_profile_user_name_and_last_active_time">
+                  <div class="massages_profile_user_name">Bhavin</div>
+
+                  <div class="massages_profile_last_active">15 minutes ago</div>
+                </div>
+
+                <div class="shot_massage_main">Short message goes here...</div>
+              </div>
+            </div>
+
+            <!-- 2 member -->
+
+            <div class="massages_profile_main">
+              <div class="massages_profile_img">
+                <img src="./img/Screenshot 2024-07-19 021025.jpg" alt="user" />
+              </div>
+
+              <div class="massages_profile_text_main">
+                <div class="massages_profile_user_name_and_last_active_time">
+                  <div class="massages_profile_user_name">Bhavin</div>
+
+                  <div class="massages_profile_last_active">15 minutes ago</div>
+                </div>
+
+                <div class="shot_massage_main">Short message goes here...</div>
+              </div>
+            </div>
+
+            <!-- 3 member -->
+
+            <div class="massages_profile_main">
+              <div class="massages_profile_img">
+                <img src="./img/Screenshot 2024-07-19 021025.jpg" alt="user" />
+              </div>
+
+              <div class="massages_profile_text_main">
+                <div class="massages_profile_user_name_and_last_active_time">
+                  <div class="massages_profile_user_name">Bhavin</div>
+
+                  <div class="massages_profile_last_active">15 minutes ago</div>
+                </div>
+
+                <div class="shot_massage_main">Short message goes here...</div>
+              </div>
+            </div>
+
+            <!-- 4 member -->
+
+            <div class="massages_profile_main4">
+              <div class="massages_profile_img">
+                <img src="./img/Screenshot 2024-07-19 021025.jpg" alt="user" />
+              </div>
+
+              <div class="massages_profile_text_main">
+                <div class="massages_profile_user_name_and_last_active_time">
+                  <div class="massages_profile_user_name">Bhavin</div>
+
+                  <div class="massages_profile_last_active">15 minutes ago</div>
+                </div>
+
+                <div class="shot_massage_main">Short message goes here...</div>
+              </div>
+            </div>
+          </div>
+          <div class="calender_container">
+            <div class="calender_main">
+              <div class="calender_text">
+                <p>Calender</p>
+              </div>
+              <div class="calender_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+
+            <div class="calender_date">
+              <div id="caleandar"></div>
+            </div>
+          </div>
+
+          <div class="to-do-list_container">
+            <div class="to-do-list_main">
+              <div class="to-do-list_text">
+                <p>To Do List</p>
+              </div>
+              <div class="to-do-list_show_all">
+                <p>Show All</p>
+              </div>
+            </div>
+
+            <div class="enter_task_and_add_button_main">
+              <div class="enter_task_input">
+                <input type="text" placeholder="Enter Task" />
+              </div>
+              <div class="enter_task_add_button">Add</div>
+            </div>
+
+            <!-- 1 check box -->
+            <div class="checkbox_and_text_cross_icon_main">
+              <div class="checkbox_main">
+                <input type="checkbox" />
+              </div>
+              <div class="text_and_cross_icon">
+                <div class="text">Short task goes here...</div>
+                <div class="cross_icon">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 check box -->
+            <div class="checkbox_and_text_cross_icon_main">
+              <div class="checkbox_main">
+                <input type="checkbox" />
+              </div>
+              <div class="text_and_cross_icon">
+                <div class="text">Short task goes here...</div>
+                <div class="cross_icon">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 check box -->
+            <div class="checkbox_and_text_cross_icon_main">
+              <div class="checkbox_main">
+                <input type="checkbox" />
+              </div>
+              <div class="text_and_cross_icon">
+                <div class="text"><del> Short task goes here</del>...</div>
+                <div class="cross_icon">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 check box -->
+            <div class="checkbox_and_text_cross_icon_main">
+              <div class="checkbox_main">
+                <input type="checkbox" />
+              </div>
+              <div class="text_and_cross_icon">
+                <div class="text">Short task goes here...</div>
+                <div class="cross_icon">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 check box -->
+
+            <div class="checkbox_and_text_cross_icon_main5">
+              <div class="checkbox_main">
+                <input type="checkbox" />
+              </div>
+              <div class="text_and_cross_icon">
+                <div class="text">Short task goes here...</div>
+                <div class="cross_icon">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copiyright_main">
+          <div class="copiy_right_sub_container">
+            <div class="copiy_container_left_part_main">
+              <div class="copiy_container_left_part">
+                <p>
+                  © <span>Red & white Multimeadia Education</span>, All Right
+                  Reserved.
+                </p>
+              </div>
+              <div class="copiy_container_right_part">
+                <p class="frist">Designed By:- <span> Bhavin Parmar</span></p>
+                <p class="second">
+                  Distributed By:- <span> Bhavin Parmar </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
       $(document).ready(function () {
         setTimeout(function () {
           // Fade in duration: 3 second
-          $(".content").fadeIn(2000);
-          $(".loading-overlay").fadeOut(2000);
+          $(".content").fadeIn(500);
+          $(".loading-overlay").fadeOut(500);
 
           // Fade out duration: 3 second
           // Display loading overlay for 1 second
-        }, 1000);
+        }, 500);
 
         $(".hame_burger_icon").click(function () {
           $(".right_main").toggle();
         });
       });
     </script>
-    </body>
+
+    <!-- script for left_chart   -->
+    <script>
+      var options = {
+        series: [
+          {
+            name: "Net Profit",
+            data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+          },
+          {
+            name: "Revenue",
+            data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+          },
+          {
+            name: "Free Cash Flow",
+            data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 212,
+          width: 422,
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: "55%",
+            endingShape: "rounded",
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ["red"],
+        },
+        xaxis: {
+          categories: [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+          ],
+        },
+
+        fill: {
+          opacity: 1,
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands";
+            },
+          },
+        },
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector(".chart_right"),
+        options
+      );
+      chart.render();
+    </script>
+
+    <!-- script for right_chart   -->
+
+    <script>
+      var options = {
+        series: [
+          {
+            data: [34, 44, 54, 21, 12, 43, 33, 23, 66, 66, 58],
+          },
+        ],
+        chart: {
+          type: "line",
+          height: 212,
+          width: 422,
+          colors: ["red"],
+        },
+        stroke: {
+          curve: "stepline",
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        title: {
+          text: "Stepline Chart",
+          align: "left",
+        },
+        markers: {
+          hover: {
+            sizeOffset: 4,
+          },
+        },
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector(".chart_left"),
+        options
+      );
+      chart.render();
+    </script>
+
+    <!-- js file for calender -->
+    <script type="text/javascript" src="js/caleandar.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </body>
 </html>
