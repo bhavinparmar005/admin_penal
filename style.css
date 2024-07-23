@@ -597,6 +597,102 @@ body {
   color: var(--primary);
 }
 
+
+/* Log In page */
+
+
+.login_icon_and_tex_main {
+  width: 226px;
+  height: 54px;
+  border-radius: var(--half_border_radius);
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.login_icon_and_text_sub {
+  width: 200px;
+  height: 54px;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+}
+.login_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--round_border);
+  background: var(--dark);
+}
+.login_icon > i {
+  color: var(--font_color);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9px;
+  padding-right: 3px;
+}
+.login_text_and_dropdown_main {
+  width: 150px;
+  height: 40px;
+  /* border: 1px solid rgb(184, 23, 23); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_text {
+  width: 130px;
+  height: 40px;
+  /* border: 1px solid white; */
+  color: var(--font_color);
+  font-size: var(--font_white_color_size);
+  line-height: 38px;
+  padding-left: 10px;
+}
+.login_text >a{
+  color: var(--font_color);
+  font-size: var(--font_white_color_size);
+  text-decoration: none;
+}
+.login_drop_down {
+  /* margin-top: 5px; */
+  width: 15px;
+  height: 15px;
+  /* border:1px solid orange; */
+}
+
+.login_drop_down > i {
+  color: var(--font_color);
+  font-size: 14px;
+  font-weight: 900;
+  position: relative;
+  top: -3px;
+  left: -1px;
+  transition: all 0.5s ease-in-out;
+}
+
+.login_icon_and_tex_main:hover {
+  background: var(--dark);
+  border-left: 3px solid var(--primary);
+}
+.login_icon_and_tex_main:hover .login_icon {
+  background-color: var(--secondary);
+}
+.login_icon_and_tex_main:hover .fa-arrow-right-to-bracket {
+  color: var(--primary);
+}
+.login_icon_and_tex_main:hover .login_text >a{
+  color: var(--primary);
+}
+.login_icon_and_tex_main:hover .fa-chevron-down {
+  color: var(--primary);
+}
+
+
+
+
+
+
+
 /* left_side */
 
 .left_main {
