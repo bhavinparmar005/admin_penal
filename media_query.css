@@ -13,8 +13,13 @@
  
    
   }
+  .left_navbar{
+    width: 100%;
+    
+  }
   .left_navbar_left_section {
     margin-left: 10px;
+    
   }
   .right_main_logo_with_icon {
     width: 100%;
@@ -28,31 +33,35 @@
     margin-top: 85px;
     width: 430px;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
 .card_1 {
-  width: 90%;
+  width: 95%;
   margin-bottom: 20px;
   justify-content: space-around;
+  margin-left: 10px;
 }
 .card_2 {
-  width: 90%;
+  width: 95%;
   margin-bottom: 20px;
   justify-content: space-around;
+  margin-left: 10px;
 }
 .card_3 {
-  width: 90%;
+  width: 95%;
   margin-bottom: 20px;
   justify-content: space-around;
+  margin-left: 10px;
 }
 .card_4 {
-  width: 90%;
+  width: 95%;
   margin-bottom: 20px;
   justify-content: space-around;
+  margin-left: 10px;
 }
 
   .chart_main {
@@ -61,22 +70,22 @@
     flex-direction: column;
   }
   .right_chart_main {
-    width: 430px;
+    width: 410px;
     height: 306px;
     background: var(--secondary);
     border-radius: var(--border_radius);
-    padding: 24px;
+  
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 .left_chart_main {
-  width: 430px;
+  width: 410px;
   height: 306px;
   background: var(--secondary);
   border-radius: var(--border_radius);
   
   margin-bottom: 20px;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 
@@ -112,9 +121,7 @@
 .nav_bar_item_user_text{
   display: none;
 }
-.left_navbar{
-  width: 100%;
-}
+
 .hame_burger_icon_and_search_bar_main{
   width: 20px;
   margin-left: 10px;

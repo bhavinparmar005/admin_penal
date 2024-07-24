@@ -709,6 +709,7 @@ body {
   background: var(--secondary);
   position: fixed;
   display: flex;
+  z-index: 999999;
 }
 
 .left_navbar_left_section {
