@@ -3,13 +3,13 @@
     margin-top:63px;
     display: none;
     z-index: 88;
-    width: 400px;
+    width: 250px;
     height: 100vh;
  
    
   }
   .right_main_logo_with_icon {
-    width: 65%;
+    width: 100%;
   }
   
   .left_main{
