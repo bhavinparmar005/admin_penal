@@ -182,19 +182,20 @@
   .copiy_container_left_part > p {
     font-size: 13px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
   }
 
   .frist {
     font-size: 13px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
   }
   .second {
     font-size: 13px;
     line-height: 15px;
-    text-align: center;
-    padding-bottom: 20px;
+    text-align: left;
+    padding-bottom: 20px; 
+    
   }
 
   .search_bar_main {
