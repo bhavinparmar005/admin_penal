@@ -72,7 +72,7 @@ body {
 }
 .right_main {
   width: 20%;
-  height: 589px;
+  height: 100vh;
   position: fixed;
   top: 2px;
   left: 0;
